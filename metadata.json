@@ -1,0 +1,6 @@
+{
+  "name": "Solidarité : Le Témoin",
+  "description": "Une aventure texte interactive pédagogique pour sensibiliser les élèves de CM2 à agir face au harcèlement scolaire.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
