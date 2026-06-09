@@ -14,6 +14,7 @@ import { IntroScreen } from "./components/IntroScreen";
 import { ChoiceList } from "./components/ChoiceList";
 import { FeedbackCard } from "./components/FeedbackCard";
 import { EndingCard } from "./components/EndingCard";
+import { SolidarityGauge } from "./components/SolidarityGauge";
 import { stepsData } from "./data";
 import { GameState } from "./types";
 import { 
@@ -257,6 +258,13 @@ export default function App() {
                 </div>
               </div>
             </div>
+
+            {/* Solidarity Balance Gauge */}
+            <SolidarityGauge
+              history={state.history}
+              currentChoiceScore={selectedChoice ? selectedChoice.score : null}
+              isFeedbackMode={state.isFeedbackMode}
+            />
 
             {/* List of 3 Choices */}
             <ChoiceList
